@@ -1,0 +1,28 @@
+Functions and Scope | Lesson 4
+Practice: Building a Recursive
+Function
+Instructions
+Build a recursive function to reverse a string.
+Tasks
+1. Write a function named reverseString that takes a string as input.
+2. The function should:
+○ Return the string itself if it contains only one character (base case).
+○ Use recursion to reverse the string by concatenating the last character
+of the string with the result of the recursive call on the remaining part
+of the string (recursive case).
+3. Test the function with various string inputs to verify its correctness.
+Example Inputs and Outputs:
+reverseString("hello"); // Outputs: "olleh"
+reverseString("recursion"); // Outputs: "noisrucer"
+reverseString("a"); // Outputs: "a"
+reverseString(""); // Outputs: ""
+Setup
+For this activity, you will create your own repository to store your code:
+1. Create a new repository.
+2. Name it: practice-building-recursive-function-[Your First Name]-[Your Last
+Initial]
+3. Make sure the repository is public.
+4. Clone the repository to your local machine.
+5. Start working on the code.
+6. When you are finished, commit your changes and push them to your
+repository
