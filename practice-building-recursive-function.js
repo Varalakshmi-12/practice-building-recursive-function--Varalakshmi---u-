@@ -26,9 +26,10 @@ Initial]
 5. Start working on the code.
 6. When you are finished, commit your changes and push them to your
 repository*/
-Functions and Scope | Lesson 4
+//Functions and Scope | Lesson 4
 
 
+//recursion using slice()
 
 function reverseString(str){
   if(str.length<=1){
@@ -42,6 +43,25 @@ console.log('"hello" reversed to : ' + reverseString("hello")); // Outputs: "oll
 console.log('"recursion" reversed to :' + reverseString("recursion")); // Outputs: "noisrucer"
 console.log('"a" reversed to :'+ reverseString("a")); // Outputs: "a"
 console.log('"" reversed to :' + reverseString("")); // Outputs: ""
+
+
+
+
+//recursion using substring()
+function reverseString(str){
+  if(str.length<=1){
+    return str;
+  }
+  return str[str.length-1] + reverseString(str.substring(0,str.length-1));
+
+}
+
+console.log('"hello" reversed to : ' + reverseString("hello")); // Outputs: "olleh"
+console.log('"recursion" reversed to :' + reverseString("recursion")); // Outputs: "noisrucer"
+console.log('"a" reversed to :'+ reverseString("a")); // Outputs: "a"
+console.log('"" reversed to :' + reverseString("")); // Outputs: ""
+
+
 
 
 
